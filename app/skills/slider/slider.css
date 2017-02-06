@@ -1,0 +1,80 @@
+#slider
+{
+  height: 455px;
+  width: 320px;
+  
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  box-shadow: 0px 0px 8px 3px gray;
+  overflow: hidden;
+}
+
+#slider #wraper
+{
+  height: 100%;
+  width: 2880px;
+  transition: margin 0.5s ease-out;
+}
+
+#slider .glyphicon-chevron-left, #slider .glyphicon-chevron-right
+{
+  z-index: 10;
+  position: absolute;
+  font-size: 40px;
+  top: 90px;
+}
+
+#slider .glyphicon-chevron-left
+{
+  left: 5px;
+}
+
+#slider .glyphicon-chevron-right
+{
+  right: 5px;
+}
+
+#slider .glyphicon-th
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 50px;
+}
+
+#slider .slide
+{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: 320px;
+  height: 100%;
+
+  background: rgb(254,204,177);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(254,204,177,1) 0%, rgba(249,184,149,1) 0%, rgba(241,116,50,1) 100%, rgba(229,160,107,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(254,204,177,1) 0%,rgba(249,184,149,1) 0%,rgba(241,116,50,1) 100%,rgba(229,160,107,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(254,204,177,1) 0%,rgba(249,184,149,1) 0%,rgba(241,116,50,1) 100%,rgba(229,160,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e5a06b',GradientType=1 );
+}
+
+#slider h1
+{
+  margin-top: 22px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+#slider h2
+{
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#slider p
+{
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,33 @@
+<nav-bar ng-init='navbarCT.init( "skills" )'></nav-bar>
+
+<div class='skills-content' ng-controller='SkillsController as skillsCT'>
+
+  <div id='java-logo' ng-click='skillsCT.open( 0 )'>
+    <img src='app/resources/java.png'>
+  </div>
+
+  <svg-html ng-click='skillsCT.open( 1 )'></svg-html>
+  <svg-css ng-click='skillsCT.open( 2 )'></svg-css>
+  <svg-js ng-click='skillsCT.open( 3 )'></svg-js>
+  
+  <div id='angular-logo' ng-click='skillsCT.open( 4 )'>
+    <img src='app/resources/angularjs.png'>
+  </div>
+  
+  <div id='mysql-logo' ng-click='skillsCT.open( 5 )'>
+    <img src='app/resources/mysql.png'>
+  </div>
+  
+  <div id='uml-logo' ng-click='skillsCT.open( 6 )'>
+    <img src='app/resources/uml.gif'>
+  </div>
+  
+  <div id='c-logo' ng-click='skillsCT.open( 7 )'>
+    <img src='app/resources/c.png'>
+  </div>
+  
+  <div id='toolbox-logo' ng-click='skillsCT.open( 8 )'>
+    <img src='app/resources/toolbox.png'>
+  </div>
+  
+</div>

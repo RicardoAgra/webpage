@@ -1,0 +1,37 @@
+<div ng-controller='HomeController as homeCT'>    
+  
+  <!-- SCREEN -->
+  <div id='screener'>
+    <ui-view></ui-view>
+    
+    <div id='enter' ng-show=homeCT.active ng-click=homeCT.open()>
+      <p>Go</p><span class="glyphicon glyphicon-chevron-down"></span>
+    </div>
+  </div>
+  <!-- } -->
+  
+  <div class='about' class='homeIcon' 
+       ng-class='{ activeHomeIcon: homeCT.active==="about" }'
+       ng-click='homeCT.select( "about" )'>
+    <svg-user></svg-user>
+  </div>
+
+  <div class='careers' class='homeIcon'
+       ng-class='{ activeHomeIcon: homeCT.active==="careers" }'
+       ng-click='homeCT.select( "careers" )'>
+    <svg-profile></svg-profile>
+  </div>
+
+  <div class='qualify' class='homeIcon' 
+       ng-class='{ activeHomeIcon: homeCT.active==="edu" }'
+       ng-click='homeCT.select( "edu" )'>
+    <svg-edu></svg-edu>
+  </div>
+
+  <div class='skills' class='homeIcon' 
+       ng-class='{ activeHomeIcon: homeCT.active==="skills" }'
+       ng-click='homeCT.select( "skills" )'>
+    <svg-tools></svg-tools>
+  </div>
+
+</div>

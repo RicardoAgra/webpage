@@ -1,0 +1,20 @@
+<div class="footer">
+  <div class="element">
+    <svg-phone ng-click='footerCT.select( "phone" )'></svg-phone>
+    <p ng-show='footerCT.active === "phone"'>Phone: +351 96 313 63 62</p>
+  </div>
+  <div class="element">
+    <svg-skype ng-click='footerCT.select( "skype" )'></svg-skype>
+    <p ng-show='footerCT.active === "skype"'>Skype: ricardo-agra</p>
+  </div>
+  <div class="element">
+    <svg-email ng-click='footerCT.select( "email" )'></svg-email>
+    <p ng-show='footerCT.active === "email"'>E-mail: agra.ric@gmail.com</p>
+  </div>
+  <div class="element">
+    <svg-linkedin ng-click='footerCT.select( "linkedin" )'></svg-linkedin>
+      <a ng-show='footerCT.active === "linkedin"' href='https://pt.linkedin.com/in/ricardo-agra-800057128'>
+        <p>Linked-in</p>
+      </a>
+  </div>
+</div>

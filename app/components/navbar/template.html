@@ -1,0 +1,28 @@
+<style>
+  .dropdown-items
+  { display: none; }
+</style>
+
+  <div id='dropdown'>
+    <svg-menu></svg-menu>
+  </div>
+    
+  <ul id='dropdown-items'>
+    <li class='navbar-item navbar-home' ng-class='{ active: navbarCT.active === "home" }' ng-click='navbarCT.home()'>
+      <svg-home></svg-home>
+    </li>
+    <li class='navbar-item navbar-about' ng-class='{ active: navbarCT.active === "about" }' ng-click='navbarCT.open( "about" )'>
+      <svg-user></svg-user>
+    </li>
+    <li class='navbar-item navbar-careers' ng-class='{ active: navbarCT.active === "careers" }' ng-click='navbarCT.open( "careers" )'>
+      <svg-profile></svg-profile>
+    </li>
+    <li class='navbar-item navbar-edu' ng-class='{ active: navbarCT.active === "edu" }' ng-click='navbarCT.open( "edu" )'>
+      <svg-edu></svg-edu>
+    </li>
+    <li class='navbar-item navbar-tools' ng-class='{ active: navbarCT.active === "skills" }' ng-click='navbarCT.open( "skills" )'>
+      <svg-tools></svg-tools>
+    </li>
+  </ul>
+
+<script src="app/components/navbar/navbar.js"></script>

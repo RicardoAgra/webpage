@@ -1,0 +1,69 @@
+.skills-content
+{
+  position: absolute;
+  
+  height: 480px;
+  width: 310px;
+  margin-top: 70px;
+
+  left: 50%;
+  
+  margin-left: -150px;
+}
+
+.skills-content svg, #java-logo, #angular-logo, #mysql-logo, #uml-logo, #c-logo, #toolbox-logo
+{
+  float: left;
+  width: 93px;
+  height: 107px;
+  
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 5px 0px black;
+  border-radius: 5px;
+}
+
+.skills-content #java-logo img
+{
+  height: 95px;
+  width: 50px;
+  
+  margin-top: 5px;
+  margin-left: 21px;
+}
+
+.skills-content #angular-logo img
+{
+  width: 95px;
+  height: 95px;
+  
+  margin-top: 10px;
+}
+
+.skills-content #mysql-logo img
+{
+  width: 75px;
+  margin-left: 9px;
+}
+
+.skills-content #uml-logo img
+{
+  width: 65px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.skills-content #c-logo img
+{
+  width: 73px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.skills-content #toolbox-logo img
+{
+  width: 75px;
+  margin-top: 15px;
+  margin-left: 8px;
+}

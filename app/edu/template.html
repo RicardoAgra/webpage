@@ -1,0 +1,76 @@
+<nav-bar ng-init='navbarCT.init( "edu" )'></nav-bar>
+
+<div ng-controller='EduController as eduCT'>
+
+  <div id='v-slider'>
+    <div class='wraper'>
+
+      <div class='separator'>
+        <hr class='left'>
+        <h1 class='year'>2017</h1>
+        <hr class='right'>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "webpage2" )'>
+        <svg-project></svg-project>
+        <h2>Web Page</h2>
+      </div>
+
+      <div class='separator'>
+        <hr class='left'>
+        <h1 class='year'>2016</h1>
+        <hr class='right'>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "store" )'>
+        <svg-app></svg-app>
+        <h2>App</h2>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "linkare" )'>
+        <svg-work></svg-work>
+        <h2>Internship</h2>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "todo" )'>
+        <svg-app></svg-app>
+        <h2>App</h2>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "webpage" )'>
+        <svg-project></svg-project>
+        <h2>Web Page</h2>
+      </div>
+      
+      <div class='event' ng-click='eduCT.open( "graduate" )'>
+        <svg-graduate></svg-graduate>
+        <h2>Graduation</h2>
+      </div>
+      
+      <div class='separator'>
+        <hr class='left'>
+        <h1 class='year'>2015</h1>
+        <hr class='right'>
+      </div>
+
+      <div class='event' ng-click='eduCT.open( "database" )'>
+        <svg-app></svg-app>
+        <h2>Database</h2>
+      </div>
+      
+      <div class='event' ng-click='eduCT.open( "prolog" )'>
+        <svg-app></svg-app>
+        <h2>Java</h2>
+      </div>
+      
+      <div class='event' ng-click='eduCT.open( "thread" )'>
+        <svg-app></svg-app>
+        <h2>Java</h2>
+      </div>
+      
+    </div>
+  </div>
+
+  <ui-view></ui-view>
+  
+</div>

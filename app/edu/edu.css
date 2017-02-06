@@ -1,0 +1,216 @@
+#v-slider
+{
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  
+  margin-top: 70px;
+  left: 5%; 
+  
+  box-shadow: 0px 0px 0px 3px lightblue;
+  overflow-y: scroll;
+  border-radius: 5px;
+  
+  background-color: aliceblue;
+}
+
+#v-slider .wraper
+{
+  z-index: 5;
+  
+  height: auto;
+  width: 100%;
+  transition: margin 0.5s ease-out;
+}
+
+#v-slider .separator
+{
+  width: 100%;
+  height: 50px;
+}
+
+#v-slider hr
+{  
+  float: left;
+  width: 20%;
+  margin-top: 24px;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  border-top: 1px solid #999;
+}
+
+#v-slider .separator h1
+{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: 38%;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 15px;
+  color: #999;
+}
+
+#v-slider .event
+{
+  z-index: 10;
+  width: 90%;
+  height: 70px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 35px;
+  
+  overflow: hidden;
+}
+
+#v-slider .event svg
+{
+  float: left;
+  
+  width: 40px;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+#v-slider .event h2
+{
+  float: left;
+  
+  z-index: 20;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.edu-view
+{
+  z-index: 30;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 0,0,0,0.8 );
+}
+
+.edu-view h2
+{
+  width: 100%;
+  height: 10%;
+  
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15%;
+  padding-top: 5px;
+  
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'nunito', sans-serif;
+}
+
+.edu-view p
+{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 30px;
+  height: 30px;
+  
+  margin-top: 3px;
+  font-size: 18px;
+  padding-left: 6px;
+  
+  border: 3px solid #bbb;
+  border-radius: 50%;
+  
+  color: #bbb;
+}
+
+.edu-view .display
+{
+  width: 90%;
+  height: 50px;
+  
+  margin-left: 5%;
+  margin-top: 20px;
+  height: 70%;
+  
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.edu-view .image
+{
+  height: 100%;
+  width: 100%;
+  padding-top: 0px; 
+  
+  border-radius: 9px 9px 9px 9px;
+  
+  overflow: hidden;
+}
+
+.edu-view .image img
+{
+  width: 200%;
+  margin-left: -50%;
+}
+
+.edu-view .view
+{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  
+  bottom: 40px;
+  
+  background-color: rgb( 100,150,255 );
+  border-radius: 0px 0px 8px 8px;
+  
+  padding-top: 4px;
+  
+  text-align: center;
+  font-size: 25px;
+  font-family: 'nunito', sans-serif;
+  
+  color: white;
+}
+
+.edu-view svg
+{
+  position: absolute;
+  width: 40px;
+  
+  top: 16px;
+  right: 15px;
+  
+  fill: white;
+}
+
+@media( min-width: 1000px )
+{ 
+  .edu-view h2
+  {
+    margin-top: 10%;
+  }
+  
+  .edu-view .display
+  {
+    width: 600px;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .edu-view .image img
+  {
+    width: 100%;
+    margin: 0px;
+  }
+  
+}
+
+
+

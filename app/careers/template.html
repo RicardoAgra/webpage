@@ -1,0 +1,40 @@
+<nav-bar ng-init='navbarCT.init( "careers" )'></nav-bar>
+
+<div id='careers-content' ng-controller='CareersController as careersCT'>
+ 
+  <div class='pill' ng-hide='careersCT.active && careersCT.active !== "engie"'>
+    <span class='glyphicon glyphicon-triangle-right'
+          ng-class='{ active: careersCT.active === "engie" }'
+          ng-click='careersCT.select( "engie" )'></span>
+    <p>Software Engineer</p>
+  </div>
+  <div class='pill' ng-hide='careersCT.active && careersCT.active !== "web"'>
+    <span class='glyphicon glyphicon-triangle-right'
+          ng-class='{ active: careersCT.active === "web" }'
+          ng-click='careersCT.select( "web" )'></span>
+    <p>WEB Developer</p>
+  </div>
+  <div class='pill' ng-hide='careersCT.active && careersCT.active !== "java"'>
+    <span class='glyphicon glyphicon-triangle-right'
+          ng-class='{ active: careersCT.active === "java" }'
+          ng-click='careersCT.select( "java" )'></span>
+    <p>JAVA Developer</p>
+  </div>
+  <div class='pill' ng-hide='careersCT.active && careersCT.active !== "sql"'>
+    <span class='glyphicon glyphicon-triangle-right'
+          ng-class='{ active: careersCT.active === "sql" }'
+          ng-click='careersCT.select( "sql" )'></span>
+    <p>SQL Developer</p>
+  </div>
+  <div class='pill' ng-hide='careersCT.active && careersCT.active !== "analyst"'>
+    <span class='glyphicon glyphicon-triangle-right'
+          ng-class='{ active: careersCT.active === "analyst" }'
+          ng-click='careersCT.select( "analyst" )'></span>
+    <p>Systems Analyst</p>
+  </div>
+
+  <div class='content' ng-show='careersCT.active'>
+    <ui-view></ui-view>
+  </div>
+  
+</div>

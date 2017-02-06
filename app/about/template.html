@@ -1,0 +1,51 @@
+<nav-bar ng-init='navbarCT.init( "about" )'></nav-bar>
+
+<div class='tabbed-content' ng-controller='AboutController as aboutCT' ng-init='aboutCT.select( "info" )'>
+  
+  <div class='tabs'>
+    <div class='tab' ng-click='aboutCT.select( "info" )' ng-class='{ active: aboutCT.active === "info" }'>
+      info
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "contacts" )' ng-class='{ active: aboutCT.active === "contacts" }'>
+      contacts
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "languages" )' ng-class='{ active: aboutCT.active === "languages" }'>
+      languages
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "traits" )' ng-class='{ active: aboutCT.active === "traits" }'>
+      traits
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "expectations" )' ng-class='{ active: aboutCT.active === "expectations" }'>
+      expectations
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "goals" )' ng-class='{ active: aboutCT.active === "goals" }'>
+      goals
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab' ng-click='aboutCT.select( "personality" )' ng-class='{ active: aboutCT.active === "personality" }'>
+      personality
+      <div class='separator'></div>
+    </div>
+    
+    <div class='tab first-child' ng-click='aboutCT.select( "faq" )' ng-class='{ active: aboutCT.active === "faq" }'>
+      faq
+      <div class='separator'></div>
+    </div>
+  </div>
+  
+  <div class='content'>
+    <ui-view></ui-view>
+  </div>
+
+</div>
