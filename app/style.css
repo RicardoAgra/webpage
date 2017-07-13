@@ -21,7 +21,6 @@ body
   min-height: 100%;
   margin: 0px;
   padding: 0px;
-  border: 1px solid black;
 
   overflow: hidden;
   padding-bottom: 40px;
@@ -108,6 +107,7 @@ body
   
   width: 100px;
   height: 50px;
+  cursor: pointer;
   
   text-align: center;
   font-size: 20px;
@@ -142,9 +142,17 @@ body
   width: 50px;
   padding-bottom: 50px;
 
+  cursor: pointer;
   border-radius: 50%;
   box-shadow: 2px 2px 20px 0px rgba( 0,0,0,0.75 );
   background-color: rgba( 140,160,160,0.4 );
+}
+
+.about:hover, .qualify:hover, .careers:hover, .skills:hover
+{
+  width: 50px;
+  padding-bottom: 46px;
+  border: 2px solid rgba( 0,200,0,.6 );
 }
 
 .about svg, .qualify svg, .careers svg, .skills svg
@@ -165,6 +173,7 @@ body
   background-color: rgba( 0,200,81,0.4 );
   border: 2px solid yellow;
 }
+.activeHomeIcon:hover { border: 2px solid yellow; }
 
 .about
 { left: 7%; }
